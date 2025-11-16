@@ -1,7 +1,7 @@
 # Crud-de-Cadastro-de-Matriculas
 Crud para cadastro de alunos, cursos e matriculas com armazenamento em banco MongoDB local.
 
-# 📘 Sistema de Gestão Escolar – PHP + MongoDB
+# Sistema de Gestão Escolar – PHP + MongoDB
 
 Mini Sistema de Cadastro de Estudantes, Cursos e Matrículas
 
@@ -16,9 +16,9 @@ O sistema demonstra conceitos de:
 
 ---
 
-# ✨ Funcionalidades
+# Funcionalidades
 
-## 👨‍🎓 Cadastro de Estudantes
+## Cadastro de Estudantes
 
 * Cadastro completo:
 
@@ -32,7 +32,7 @@ O sistema demonstra conceitos de:
 
 ---
 
-## 📚 Cadastro de Cursos
+## Cadastro de Cursos
 
 * Cadastro de cursos com:
 
@@ -50,7 +50,7 @@ O sistema demonstra conceitos de:
 
 ---
 
-## 📝 Gestão de Matrículas
+## Gestão de Matrículas
 
 * Associação entre Estudante ↔ Curso.
 * Seletores dinâmicos alimentados pelo banco.
@@ -65,7 +65,7 @@ O sistema demonstra conceitos de:
 
 ---
 
-# 🗂️ Estrutura das Collections (MongoDB)
+# Estrutura das Collections (MongoDB)
 
 ### **estudantes**
 
@@ -110,7 +110,7 @@ Armazena dados completos do aluno:
 
 ---
 
-# 🧱 Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 | Tecnologia                   | Uso no Projeto               |
 | ---------------------------- | ---------------------------- |
@@ -122,7 +122,7 @@ Armazena dados completos do aluno:
 
 ---
 
-# 📁 Estrutura do Projeto
+# Estrutura do Projeto
 
 ```
 CadastroEstudante/
@@ -146,7 +146,7 @@ CadastroEstudante/
 
 ---
 
-# ▶️ Como Executar o Projeto
+# Como Executar o Projeto
 
 ## **1. Instale o MongoDB e ative o serviço**
 
@@ -185,19 +185,18 @@ http://localhost/CadastroEstudante/
 
 ---
 
-# 📝 Fluxo do Usuário
+# Fluxo do Usuário
 
 1. **Cadastrar Estudante**
 2. **Cadastrar Curso**
 3. **Realizar Matrícula**
 4. **Listar / Editar / Excluir Matrículas**
-5. **Relatórios simples através das listagens**
 
 ---
 
-# 🧩 Relacionamentos (ER Diagram)
+# Relacionamentos
 
-MongoDB não tem ER tradicional, mas aqui está o modelo:
+MongoDB não tem ER tradicional:
 
 * **Estudante 1..N Matrículas**
 * **Curso 1..N Matrículas**
