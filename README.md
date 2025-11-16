@@ -208,7 +208,7 @@ MongoDB não tem ER tradicional:
 
 ---
 
-# 📸 Exemplos Visuais (telas)
+# Exemplos Visuais (telas)
 
 <img width="1919" height="942" alt="TelaInicial" src="https://github.com/user-attachments/assets/d4cbee16-d080-4126-b506-6cc88f9aceb4" />
 <img width="1919" height="942" alt="CadastrarEstudante" src="https://github.com/user-attachments/assets/fff2ce9a-cd30-4a7d-953a-edb650978792" />
