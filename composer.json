@@ -1,0 +1,15 @@
+{
+    "name": "bruno/cadastro-estudante",
+    "description": "sistema simples de cadastro de estudantes e cursos usando PHP e MongoDB",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bruno Ponciano da Silva",
+            "email": "brunoponc_@hotmail.com"
+        }
+    ],
+    "require": {
+        "mongodb/mongodb": "^2.1"
+    }
+}
