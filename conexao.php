@@ -11,3 +11,4 @@ try {
     die("<div class='alert alert-danger'>Erro de conexão com MongoDB: " . $e->getMessage() . "</div>");
 }
 ?>
+// Carrega automaticamente todas as classes instaladas com o Composer
