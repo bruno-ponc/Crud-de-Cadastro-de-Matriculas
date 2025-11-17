@@ -26,7 +26,7 @@ if (!$estudante) {
       <div class="col-md-3"><label class="form-label">Telefone 1</label><input name="telefone1" value="<?= $estudante->telefones[0] ?? '' ?>" class="form-control"></div>
       <div class="col-md-3"><label class="form-label">Telefone 2</label><input name="telefone2" value="<?= $estudante->telefones[1] ?? '' ?>" class="form-control"></div>
     </div>
-    <h5>👪 Filiação</h5>
+    <h5>🧑🏽‍👩🏽‍🧒🏽 Filiação</h5>
     <div class="row mb-3">
       <div class="col-md-6"><input name="mae" value="<?= $estudante->filiacao['mae'] ?? '' ?>" class="form-control" placeholder="Nome da Mãe"></div>
       <div class="col-md-6"><input name="pai" value="<?= $estudante->filiacao['pai'] ?? '' ?>" class="form-control" placeholder="Nome do Pai"></div>
@@ -65,7 +65,7 @@ if (isset($_POST['salvar'])) {
             ]
         ]]
     );
-    echo "<div class='alert alert-success mt-3'>✅ Estudante atualizado com sucesso!</div>";
+    echo "<div class='alert alert-success mt-3'>✅ O Estudante foi atualizado com sucesso!</div>";
 }
 
 $conteudo = ob_get_clean();

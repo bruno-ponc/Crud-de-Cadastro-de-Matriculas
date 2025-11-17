@@ -35,7 +35,7 @@ if (isset($_POST['salvar'])) {
         "professor" => $_POST['professor'],
         "turno" => $_POST['turno']
     ]);
-    echo "<div class='alert alert-success mt-3'>✅ Curso cadastrado com sucesso!</div>";
+    echo "<div class='alert alert-success mt-3'>✅ O Curso foi cadastrado com sucesso!</div>";
 }
 $conteudo = ob_get_clean();
 include 'layout.php';

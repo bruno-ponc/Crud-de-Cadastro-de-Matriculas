@@ -75,7 +75,7 @@ use MongoDB\BSON\ObjectId;
 
 if (isset($_POST['confirmar_exclusao'])) {
     $colecaoEstudantes->deleteOne(['_id' => new ObjectId($_POST['id_excluir'])]);
-    echo "<div class='alert alert-success mt-3'>✅ Estudante excluído com sucesso!</div>";
+    echo "<div class='alert alert-success mt-3'>✅ O Estudante foi excluído com sucesso!</div>";
     echo "<meta http-equiv='refresh' content='1;url=listar_estudantes.php'>";
 }
 

@@ -53,7 +53,7 @@ if (isset($_POST['salvar'])) {
             'turno' => $_POST['turno']
         ]]
     );
-    echo "<div class='alert alert-success mt-3'>✅ Curso atualizado com sucesso!</div>";
+    echo "<div class='alert alert-success mt-3'>✅ O Curso foi atualizado com sucesso!</div>";
 }
 
 $conteudo = ob_get_clean();

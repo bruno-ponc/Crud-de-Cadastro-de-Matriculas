@@ -5,7 +5,7 @@ use MongoDB\BSON\ObjectId;
 $titulo = "Editar Matrícula";
 ob_start();
 
-// --- Garantir que as coleções existam (compatibilidade com diferentes conexao.php) ---
+// Garantir que as coleções existam (compatibilidade com diferentes conexao.php) 
 if (!isset($colecaoEstudantes) && isset($banco)) {
     $colecaoEstudantes = $banco->estudantes;
 }
@@ -24,7 +24,7 @@ if (!isset($colecaoEstudantes) || !isset($colecaoCursos) || !isset($colecaoMatri
     exit;
 }
 
-// --- Validar ID recebido ---
+// Validar ID recebido
 $id = $_GET['id'] ?? '';
 if (empty($id)) {
     echo "<div class='alert alert-danger'>ID da matrícula não informado.</div>";
@@ -42,7 +42,7 @@ try {
     exit;
 }
 
-// --- Buscar matrícula, estudantes e cursos ---
+// Buscar matrícula, estudantes e cursos
 $matricula = $colecaoMatriculas->findOne(['_id' => $matriculaId]);
 if (!$matricula) {
     echo "<div class='alert alert-danger'>Matrícula não encontrada.</div>";
@@ -54,7 +54,7 @@ if (!$matricula) {
 $estudantes = $colecaoEstudantes->find()->toArray();
 $cursos = $colecaoCursos->find()->toArray();
 
-// --- Processar POST (salvar alterações) ---
+// Processar POST (salvar alterações)
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['salvar'])) {
     // validações básicas
     $estudanteSelecionado = $_POST['estudante_id'] ?? '';
