@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <h5 class="mt-4">👪 Filiação</h5>
+    <h5 class="mt-4">🧑🏽‍👩🏽‍🧒🏽 Filiação</h5>
     <div class="row mb-3">
       <div class="col-md-6">
         <label class="form-label">Nome da Mãe</label>
@@ -77,7 +77,7 @@ if (isset($_POST['salvar'])) {
         ]
     ];
     $colecaoEstudantes->insertOne($dados);
-    echo "<div class='alert alert-success mt-3'>✅ Estudante cadastrado com sucesso!</div>";
+    echo "<div class='alert alert-success mt-3'>✅ O Estudante foi cadastrado com sucesso!</div>";
 }
 $conteudo = ob_get_clean();
 include 'layout.php';

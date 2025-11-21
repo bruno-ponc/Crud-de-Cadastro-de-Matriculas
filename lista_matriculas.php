@@ -101,7 +101,7 @@ if (isset($_POST['confirmar_exclusao'])) {
         '_id' => new ObjectId($_POST['id_excluir'])
     ]);
 
-    echo "<div class='alert alert-success mt-3'>✅ Matrícula excluída com sucesso!</div>";
+    echo "<div class='alert alert-success mt-3'>✅ A Matrícula foi excluída com sucesso!</div>";
     echo "<meta http-equiv='refresh' content='1;url=lista_matriculas.php'>";
 }
 

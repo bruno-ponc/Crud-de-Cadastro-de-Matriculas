@@ -33,7 +33,7 @@ if (isset($_POST['matricular'])) {
         "curso_id" => new MongoDB\BSON\ObjectId($_POST['curso_id']),
         "data" => date("Y-m-d")
     ]);
-    echo "<div class='alert alert-success mt-3'>✅ Matrícula realizada com sucesso!</div>";
+    echo "<div class='alert alert-success mt-3'>✅ A Matrícula foi realizada com sucesso!</div>";
 }
 $conteudo = ob_get_clean();
 include 'layout.php';
