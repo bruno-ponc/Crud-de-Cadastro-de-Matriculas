@@ -1,4 +1,5 @@
 <?php
+// conecta ao MongoDB, seleciona o banco escola
 require 'vendor/autoload.php';
 
 try {
